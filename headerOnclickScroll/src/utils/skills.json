@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Javascript",
+    "icon": ""
+  },
+  {
+    "id": 2,
+    "name": "EcmaScript",
+    "icon": ""
+  },
+  {
+    "id": 3,
+    "name": "React",
+    "icon": ""
+  },
+  {
+    "id": 4,
+    "name": "Redux",
+    "icon": ""
+  },
+  {
+    "id": 5,
+    "name": "CSS",
+    "icon": ""
+  },
+  {
+    "id": 6,
+    "name": "HTML",
+    "icon": ""
+  },
+  {
+    "id": 7,
+    "name": "Sass",
+    "icon": ""
+  },
+  {
+    "id": 8,
+    "name": "PWA",
+    "icon": ""
+  },
+  {
+    "id": 9,
+    "name": "React-native",
+    "icon": ""
+  },
+  {
+    "id": 10,
+    "name": "Bootstrap",
+    "icon": ""
+  }
+]

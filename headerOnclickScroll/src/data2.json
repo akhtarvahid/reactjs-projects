@@ -1,0 +1,31 @@
+[
+  {
+    "name": "javascript",
+    "icon": "https://i.pinimg.com/originals/93/d3/e3/93d3e31639a4d07613de9dccdc8bd5e8.png",
+    "content": "Often abbreviated as JS, is a high-level, interpreted scripting language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.Often abbreviated as JS, is a high-level, interpreted scripting language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functionsOften abbreviated as JS, is a high-level, interpreted scripting language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functionsOften abbreviated as JS, is a high-level, interpreted scripting language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functionsOften abbreviated as JS, is a high-level, interpreted scripting language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functionsOften abbreviated as JS, is a high-level, interpreted scripting language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions"
+  },
+
+  {
+    "name": "react",
+    "icon": "http://www.myiconfinder.com/uploads/iconsets/256-256-de1b3a57d93bf90884e8b06110d70fb1-academics.png",
+    "content": "React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications, as it is optimal for fetching rapidly changing data that needs to be recorded."
+  },
+
+  {
+    "name": "angular",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG6SuGSqfh_3xxBFwAS2R5FsdjgOnkEBI4nPhXbLHJuGX5OGFO&s",
+    "content": "JavaScript Testing Framework with a focus on simplicity. It works with projects using: Babel, TypeScript, Node.js, React, Angular and Vue.js. It aims to work out of the box and config free.JavaScript Testing Framework with a focus on simplicity. It works with projects using: Babel, TypeScript, Node.js, React, Angular and Vue.js. It aims to work out of the box and config free."
+  },
+
+  {
+    "name": "enzyme",
+    "icon": "https://cdn0.iconfinder.com/data/icons/ikooni-outline-seo-web/128/seo2-12-512.png",
+    "content": "JavaScript testing framework , created by developers who created react. Jest is not limited to react framework, it is general purpose javascript testing framework. but as it is from react developers more inclination is there. Enzyme is another framework which is specifically designed to test react components"
+  },
+
+  {
+    "name": "webpack",
+    "icon": "https://cdn2.iconfinder.com/data/icons/design-butterscotch-vol-1/256/Clean_Code-512.png",
+    "content": "Open-source JavaScript module bundler. It is a module bundler primarily for JavaScript, but it can transform front-end assets like HTML, CSS, and images if the corresponding plugins are included. Webpack takes modules with dependencies and generates static assets representing those modules."
+  }
+]

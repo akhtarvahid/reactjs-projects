@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+}
+.header a {
+  padding: 50px;
+  margin: 2px;
+  background: darkcyan;
+  color: white;
+  border-radius: 50%;
+}
+.navList {
+  padding: 10px 20px;
+  background: darkcyan;
+  color: white;
+  margin: 5px;
+}
+
+.summary {
+  color: yellowgreen;
+}
+.orange {
+  color: orange;
+}
+.speed {
+  color: green;
+}
+.dynamic {
+  color: blue;
+}
+/* .sidebar {
+  background-image: url("../../../public/public-images/book.jpg");
+} */

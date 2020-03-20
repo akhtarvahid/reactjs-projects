@@ -1,0 +1,15 @@
+body {
+  background-color: #00bcd40d;
+}
+.card-body {
+  background-color: white;
+}
+.bg-dark {
+  background-color: #428c85 !important;
+}
+.btn-block {
+  background-color: #428c85 !important;
+}
+.display-4 {
+  font-size: 2rem;
+}

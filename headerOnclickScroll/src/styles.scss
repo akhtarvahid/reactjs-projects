@@ -1,0 +1,144 @@
+$main-bg: #cfd8dc;
+$pad-s: 0.5em;
+$pad-m: 1em;
+$pad-l: 2em;
+$primary: #2f2d73;
+$shadow: 0 2px 6px rgba(black, 0.15);
+
+// RESETTING ///////////////
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font: 16px "Roboto", sans-serif;
+}
+
+// This is how CSS "box-sizing" reset it truely done BTW:
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+#root {
+  // padding:6vh 10vw;
+  background: $main-bg;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+  > aside {
+    --delta: 0px;
+    flex: calc(20% + var(--delta) * 1px);
+    min-width: 250px;
+    background: white;
+    box-shadow: $shadow;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+}
+
+.asideComp {
+  display: flex;
+
+  &.isDragging {
+    user-select: none;
+
+    > nav {
+      background: lighten($main-bg, 10);
+    }
+  }
+
+  > nav {
+    flex: 6 1;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    box-shadow: 1px -1px 0px 0px #e56c0d;
+    padding: $pad-s 0;
+    cursor: col-resize;
+
+    &:hover {
+      background: lighten($main-bg, 12);
+    }
+
+    > button {
+      background: none;
+      border: 0;
+      width: 100%;
+      padding: 2vh 0.2em;
+      font-size: 1.2em;
+      filter: grayscale(1);
+      transition: 0.5s;
+      cursor: pointer;
+      user-select: none;
+      opacity: 0.6;
+
+      &:focus {
+        background: none;
+        outline: none;
+      }
+
+      &:hover {
+        //filter: grayscale(.5);
+        transition: 0s;
+        opacity: 1;
+      }
+
+      &.active {
+        filter: none;
+        transition: 50ms;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  > .asideContent {
+    flex: 100;
+    overflow: auto;
+
+    > section {
+      margin-bottom: $pad-l;
+      // padding: $pad-m;
+
+      &:last-child:not(:first-child) {
+        margin-bottom: 100%;
+      }
+
+      > header {
+        position: sticky;
+        top: -1px;
+        padding-top: $pad-s;
+        margin-top: -$pad-s;
+        padding-bottom: $pad-s;
+        background: linear-gradient(to top, transparent 0%, #fff 30%);
+        text-transform: capitalize;
+        font-size: 1.3em;
+        color: #999;
+        transition: 0.1s;
+        //  border-bottom: 1px solid rgba($primary, .2);
+      }
+
+      .sideSectionContent {
+        color: #888;
+        font-size: 0.9em;
+        line-height: 1.3;
+      }
+
+      &.active {
+        > header {
+          color: rgb(0, 173, 255);
+        }
+
+        .sideSectionContent {
+          color: #333;
+        }
+      }
+    }
+  }
+}
