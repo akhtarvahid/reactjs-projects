@@ -1,0 +1,30 @@
+td, th {
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+.input-group{
+    margin: 20px 0px;
+}
+
+svg{
+    height: 150px;
+}
+td:first-of-type, td:first-of-type > div {
+    height: 200px;
+    width: 250px;
+}
+
+/* search */
+.search-box {
+    margin-bottom: 45px;
+}
+.find-weather-text {
+    margin: 25px 0px;
+    color: darkseagreen;
+}
+.error {
+    font-size: 12px;
+    color: red;
+    font-family: system-ui;
+}

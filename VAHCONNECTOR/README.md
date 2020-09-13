@@ -1,2 +1,0 @@
-# VAHCONNECTOR
-FullstackApp

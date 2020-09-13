@@ -1,0 +1,19 @@
+body {
+  background-color: #00bcd40d;
+}
+.card-body {
+  background-color: #027386;
+  color: white;
+}
+.bg-dark {
+  background-color: #ff7f50e0 !important;
+}
+.btn-block {
+  background-color: #ff7f50e0 !important;
+}
+.display-4 {
+  font-size: 2rem;
+}
+.btn-primary {
+  border: none;
+}

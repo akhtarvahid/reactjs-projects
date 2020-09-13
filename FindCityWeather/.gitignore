@@ -1,0 +1,13 @@
+/node_modules
+bundle.js
+npm-debug.log
+.DS_Store
+
+
+# IntelliJ
+*.iml
+/.idea
+
+# hide keys
+.api_key/
+*/.api_key
