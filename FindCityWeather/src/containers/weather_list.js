@@ -21,7 +21,6 @@ class WeatherList extends Component {
       )
     }
     render() {
-      console.log(this.props.weather);
         return (
         <React.Fragment> 
         {(this.props.weather[0]!==undefined) ?

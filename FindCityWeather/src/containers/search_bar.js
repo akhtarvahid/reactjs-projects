@@ -21,7 +21,7 @@ class SearchBar extends Component {
     }
     onFormSubmit(event){
        event.preventDefault();
-       if(this.state.term!==undefined && this.state.term!=='') {
+       if(this.state.term) {
         this.props.fetchWeather(this.state.term);
         this.setState({entered: false})
        } else {
