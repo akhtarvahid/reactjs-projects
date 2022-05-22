@@ -3,11 +3,11 @@
 Follow steps to clone and run application
 - `git clone https://github.com/akhtarvahid/ReactJs-Multiple-projects.git`
 
-- `cd FindCityWeather`
+- `cd SearchLyrics`
 
-- `FindCityWeather> npm install`
+- `SearchLyrics> npm install`
 
-- `FindCityWeather> npm start`
+- `SearchLyrics> npm start`
 
 
 
