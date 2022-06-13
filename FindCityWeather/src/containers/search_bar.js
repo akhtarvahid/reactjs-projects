@@ -6,10 +6,10 @@ import { fetchWeather } from '../actions/index';
 class SearchBar extends Component {
     constructor(props){
       super(props);
-
-      this.state = { term: 'delhi', entered: false};
-      this.onInputChange = this.onInputChange.bind(this);
-      this.onFormSubmit = this.onFormSubmit.bind(this);
+      this.state = { 
+        term: 'delhi', 
+        entered: false
+      };
     }
     componentDidMount() {
         // default city 
@@ -19,21 +19,23 @@ class SearchBar extends Component {
     onInputChange = (event) => {
         this.setState({term: event.target.value})
     }
-    onFormSubmit(event){
-       event.preventDefault();
-       if(this.state.term) {
-        this.props.fetchWeather(this.state.term);
-        this.setState({entered: false})
+    onFormSubmit = (e) => {
+       e.preventDefault();
+       const { term } = this.state;
+
+       if(term) {
+        this.props.fetchWeather(term);
+        this.setState({ entered: false})
        } else {
-        this.setState({entered: true})
+        this.setState({ entered: true})
        }
-       this.setState({term:''})
+       this.setState({ term:'' })
     }
     render() {
         const { entered } = this.state;
         return (
         <div className="search-box">    
-        <h2 className="find-weather-text">Search your city weather</h2>
+        <h2 className="find-weather-text">Check Your City Weather</h2>
         <form className="input-group" onSubmit={this.onFormSubmit}>
          <input 
            placeholder="Get a five-day forecast in your favorite cities"
