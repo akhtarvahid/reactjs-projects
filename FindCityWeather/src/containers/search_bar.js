@@ -4,12 +4,9 @@ import { bindActionCreators } from 'redux';
 import { fetchWeather } from '../actions/index';
 
 class SearchBar extends Component {
-    constructor(props){
-      super(props);
-      this.state = { 
-        term: 'delhi', 
-        entered: false
-      };
+    state = {
+      term: 'delhi', 
+      entered: false
     }
     componentDidMount() {
         // default city 
@@ -25,11 +22,11 @@ class SearchBar extends Component {
 
        if(term) {
         this.props.fetchWeather(term);
-        this.setState({ entered: false})
+        this.setState({ entered: false});
        } else {
-        this.setState({ entered: true})
+        this.setState({ entered: true});
        }
-       this.setState({ term:'' })
+       this.setState({ term:'' });
     }
     render() {
         const { entered } = this.state;
