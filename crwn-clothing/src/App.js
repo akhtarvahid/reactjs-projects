@@ -22,6 +22,7 @@ const App = () => {
     title: 'Mens'
   }
   ]
+  
   return (
     <div className="categories-container">
       {categories.map(category => 
