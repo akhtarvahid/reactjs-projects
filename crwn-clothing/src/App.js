@@ -1,31 +1,12 @@
 import React from 'react';
 import './App.css';
-
+import data from './data.json'
 const App = () => {
-  const categories = [{
-    id: 1,
-    title: 'Hats'
-  },
-  {
-    id: 2,
-    title: 'Jackets'
-  },
-  {
-    id: 3,
-    title: 'Sneakers'
-  },{
-    id: 4,
-    title: 'Womens'
-  },
-  {
-    id: 5,
-    title: 'Mens'
-  }
-  ]
-  
+
+
   return (
     <div className="categories-container">
-      {categories.map(category => 
+      {data.map(category => 
         <div className='category-container' key={category.id}>
         <div className='background-image'/>
         <div className='category-body-container'>
