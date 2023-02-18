@@ -1,21 +1,13 @@
 import React from 'react';
-// import './App.css';
+import './App.css';
 import data from './data.json'
-import './categories.styles.scss';
-import CategoryItem from './components/category-item/category-item.component';
+import Directory from './components/directory/directory.component';
 
 const App = () => {
 
 
   return (
-    <div className="categories-container">
-      {data.map(category => 
-        <CategoryItem 
-          key={category.id} 
-          category={category}
-         />
-      )}
-    </div>
+    <Directory data={data} />
   );
 }
 
