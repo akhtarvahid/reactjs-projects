@@ -6,9 +6,9 @@ import Home from './routes/Home.component';
 const Navigation = () => {
   return (
     <div>
-     <div>
+      <div>
       <h1>I am the Navigation bar</h1> 
-     </div>
+      </div>
      <Outlet />
     </div>
   )
