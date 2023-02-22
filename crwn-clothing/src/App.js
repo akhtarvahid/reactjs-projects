@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
-import data from './data.json'
-import Directory from './components/directory/directory.component';
+import { Route, Routes } from 'react-router-dom';
+import Home from './routes/Home.component';
 
 const App = () => {
 
 
   return (
-    <Directory data={data} />
+    <Routes>
+      <Route path='/' element={<Home />} />
+    </Routes>
   );
 }
 
