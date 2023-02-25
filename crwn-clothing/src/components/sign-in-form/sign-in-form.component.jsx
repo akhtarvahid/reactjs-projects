@@ -38,7 +38,10 @@ const SignInForm = () => {
         console.log(response);
         resetFormFields();
     }catch(err) {
-        
+         if(err.code === 'auth/wrong-password') {
+          alert('incorrect password for email')
+         }
+         console.log(err);
     }
   }
 
