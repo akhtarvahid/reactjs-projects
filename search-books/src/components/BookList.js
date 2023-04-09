@@ -1,7 +1,8 @@
 import React from 'react'
+import { BookWrapper } from './book.style'
 
 export default function BookList() {
   return (
-    <div>BookList</div>
+    <BookWrapper>BookList</BookWrapper>
   )
 }
