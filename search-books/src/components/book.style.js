@@ -5,8 +5,7 @@ export const BookWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background: grey;
-    color: white;
+    margin: ${props => props.margin};
 `
 export const BookTitle = styled.div`
     font-size: 50px;
