@@ -5,6 +5,9 @@ export const StyledButton = styled.button`
    border: 1px solid coral;
    background-color: coral;
    color: white;
+   &:hover {
+    cursor: pointer;
+   }
 `
 
 export const StyledInput = styled.input`
