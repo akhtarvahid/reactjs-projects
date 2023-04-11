@@ -1,10 +1,14 @@
 import React from 'react'
 import { BookTitle, BookWrapper } from './book.style'
+import { OpenBook } from '@styled-icons/entypo'
 
 export default function BookHeader() {
   return (
      <BookWrapper>
-        <BookTitle>Find your books</BookTitle>
+        <BookTitle> 
+          <OpenBook size="48" title="Search book" /> 
+          Find your books
+        </BookTitle>
      </BookWrapper>
   )
 }
