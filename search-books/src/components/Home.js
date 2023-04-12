@@ -4,17 +4,25 @@ import SearchBook from './SearchBook'
 import BookList from './BookList'
 import BookHeader from './BookHeader'
 import { fetchApi } from '../utils/api'
+import Loader from './styled/Loader'
 
 export default function Home() {
   const [searchedText, setSearchedText] = useState('');
   const [result, setResult] = useState({});
+  const [isLoading, setIsLoading] = useState(false);
   const handleChange = e => {
      setSearchedText(e.target.value)
   }
   const handleSubmit = e => {
     e.preventDefault();
+    setIsLoading(true)
     fetchApi(searchedText)
-    .then(res => setResult(res));
+    .then(res => {
+      if(res) {
+        setResult(res);
+        setIsLoading(false);
+      }
+    });
   }
   return (
     <Wrapper>
@@ -23,7 +31,7 @@ export default function Home() {
           handleChange={handleChange} 
           handleSubmit={handleSubmit}
         />
-        <BookList result={result} />
+        {isLoading ? <Loader /> : <BookList result={result} />}
     </Wrapper>
   )
 }

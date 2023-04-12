@@ -12,7 +12,7 @@ export default function SearchBook({
     <BookWrapper margin='30px 0 30px 0'>
       <Form onSubmit={handleSubmit}>
         <Input placeholder='Search book' name="book" onChange={handleChange}/>
-        <Button type='submit' text='Submit' />
+        <Button type='submit' text='Search' />
       </Form>
     </BookWrapper>
   )

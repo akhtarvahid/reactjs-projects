@@ -1,4 +1,5 @@
+import { API_URL } from "./constant"
+
 export const fetchApi = (searchedText) => {
-     return fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchedText}`)
-    .then(res=> res.json())
+     return fetch(`${API_URL}${searchedText}`).then(res=> res.json())
  }
