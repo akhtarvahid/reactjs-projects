@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
-import { Wrapper } from './home.style'
-import SearchBook from './SearchBook'
-import BookList from './BookList'
-import BookHeader from './BookHeader'
-import { fetchApi } from '../utils/api'
-import Loader from './styled/Loader'
+import Loader from './components/styled/Loader';
+import BookList from './components/BookList';
+import SearchBook from './components/SearchBook';
+import BookHeader from './components/BookHeader';
+import { fetchApi } from './utils/api';
 
 export default function Home() {
   const [searchedText, setSearchedText] = useState('');
@@ -25,13 +24,13 @@ export default function Home() {
     });
   }
   return (
-    <Wrapper>
+    <>
         <BookHeader />
-        <SearchBook 
+        <SearchBook
           handleChange={handleChange} 
           handleSubmit={handleSubmit}
         />
         {isLoading ? <Loader /> : <BookList result={result} />}
-    </Wrapper>
+    </>
   )
 }

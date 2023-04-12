@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { LoaderCircle } from '@styled-icons/boxicons-regular'
+import { FontSize, LoaderCircle } from '@styled-icons/boxicons-regular'
+import Text from "./Text";
 
 export const StyledButton = styled.button`
    padding: 10px 30px;
@@ -40,4 +41,10 @@ export const StyledLoader = styled.div`
 `
 export const StyledLoaderCircle = styled(LoaderCircle)`
  fill: coral;
+`
+export const StyledText = styled.div`
+   font-size: ${props => props.fontSize || '1rem'};
+   margin: ${props => props.margin || ''};
+   padding: ${props => props.padding || ''};
+   color: ${props => props.color || 'coral'};;
 `
