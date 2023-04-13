@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { FontSize, LoaderCircle } from '@styled-icons/boxicons-regular'
-import Text from "./Text";
+import { LoaderCircle } from '@styled-icons/boxicons-regular'
 
 export const StyledButton = styled.button`
    padding: 10px 30px;
