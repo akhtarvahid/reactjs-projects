@@ -8,6 +8,14 @@ export const StyledButton = styled.button`
    background-color: coral;
    color: white;
    font-size: 1rem;
+   &:disabled{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
    &:hover {
     cursor: pointer;
    }
