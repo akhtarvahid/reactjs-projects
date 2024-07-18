@@ -1,6 +1,6 @@
 import React from 'react'
 import Directory from '../../components/directory/directory.component';
-import data from '../../data.json';
+import data from '../../utils/data.json';
 
 const Home = () => {
   return (
