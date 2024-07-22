@@ -1,9 +1,7 @@
 import React from "react";
+import { clothing1, clothing2, clothing3 } from "./data";
 import "./carousel.scss";
-const clothing1 =
-  "https://images.unsplash.com/photo-1523380677598-64d85d015339?q=80&w=3570&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
-const clothing2 =
-  "https://images.unsplash.com/photo-1470309864661-68328b2cd0a5?q=80&w=3570&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+
 export default function Carousel() {
   return (
     <div
@@ -23,20 +21,16 @@ export default function Carousel() {
 
       {/* <!-- Wrapper for slides --> */}
       <div class="carousel-inner">
-        <figure
-          class="item preload loaded active"
-          data-img-src="https://picsum.photos/750/400?image=0"
-        >
-          <img src={clothing1} alt="" />
-          <figcaption class="carousel-caption">Caption 1 </figcaption>
-        </figure>
-        <figure
-          class="item preload loaded"
-          data-img-src="https://picsum.photos/750/400"
-        >
-          <img src={clothing2} alt="" />
-          <figcaption class="carousel-caption">Caption 2 </figcaption>
-        </figure>
+        {[clothing1, clothing2, clothing3].map((clothing, i) => (
+          <figure
+            key={`clothing ${i}`}
+            class="item preload loaded"
+            data-img-src="https://picsum.photos/750/400"
+          >
+            <img src={clothing} alt="" />
+            <figcaption class="carousel-caption">Caption ${i + 1} </figcaption>
+          </figure>
+        ))}
       </div>
 
       {/* <!-- Controls --> */}
